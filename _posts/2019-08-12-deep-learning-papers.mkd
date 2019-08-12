@@ -10,7 +10,7 @@ categories: deep-learning
 
 ## CNN
 
-LeCun et al., 1998. Gradient-based learning applied to document recognition
+[LeCun et al., 1998. Gradient-based learning applied to document recognition](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf)
 
 Krizhevsky et al., 2012. ImageNet classification with deep convolutional neural networks
 
