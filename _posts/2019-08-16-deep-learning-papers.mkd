@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deep Learning Papers"
-date:   2019-08-12 01:00:00
+date:   2019-08-16 01:00:00
 categories: deep-learning
 ---
 
@@ -181,6 +181,3 @@ DenseNet: Densely Connected Convolutional Networks
 Human-level control through deep reinforcement learning [https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf]
 
 Mastering the Game of Go without Human Knowledge [https://deepmind.com/documents/119/agz_unformatted_nature.pdf]
-
-
-
