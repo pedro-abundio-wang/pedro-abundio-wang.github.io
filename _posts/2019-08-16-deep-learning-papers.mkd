@@ -8,6 +8,10 @@ categories: deep-learning
 * TOC
 {:toc}
 
+## Algorithms
+
+[Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167)
+
 ## CNN
 
 [LeCun et al., 1998. Gradient-based learning applied to document recognition](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf)
