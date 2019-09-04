@@ -26,6 +26,8 @@ Lin et al., 2013. Network in network
 
 Szegedy et al. 2014. Going deeper with convolutions
 
+Fully Convolutional Networks for Semantic Segmentation
+
 Sermanet et al., 2014, OverFeat: Integrated recognition, localization and detection using convolutional networks
 
 Redmon et al., 2015, You Only Look Once: Unified real-time object detection
