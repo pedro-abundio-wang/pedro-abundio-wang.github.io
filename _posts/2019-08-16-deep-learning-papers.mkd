@@ -187,3 +187,103 @@ DenseNet: Densely Connected Convolutional Networks
 Human-level control through deep reinforcement learning [https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf]
 
 Mastering the Game of Go without Human Knowledge [https://deepmind.com/documents/119/agz_unformatted_nature.pdf]
+
+## CS230
+
+[#001A Introduction to Deep Learning](http://datahacker.rs/001-introduction-to-deep-learning/)
+
+[#001B Deep Learning, wait but why now?](http://datahacker.rs/001-introduction-to-deep-learning-2/)
+
+[#002 Binary classification](http://datahacker.rs/binary-classification/)
+
+[#002B Image representation in a computer](http://datahacker.rs/image-representation-in-a-computer/)
+
+[#003A Logistic Regression – Cost Function Optimization](http://datahacker.rs/003-logistic-regression-cost-function-2/)
+
+[#003B Gradient Descent](http://datahacker.rs/003b-gradient-descent/)
+
+[#003C Gradient Descent in Python](http://datahacker.rs/003b-gradient-descent-in-python/)
+
+[#004A Logistic Regression – The Computation Graph](http://datahacker.rs/004a-computation-graph/)
+
+[#004B The Computation Graph – Example](http://datahacker.rs/004-computation-graph-2/)
+
+[#005A Logistic Regression from scratch](http://datahacker.rs/005a_logistic-regression-from-scratch/)
+
+[#005B Logistic Regression: Scratch vs. Scikit-Learn](http://datahacker.rs/logistic-regression-from-scratch-vs-scikit-learn/)
+
+[#006A Fast Logistic Regression](http://datahacker.rs/006a-vectorizing-logistic-regression/)
+
+[#006B Vectorization and Broadcasting in Python](http://datahacker.rs/006b-vectorization-optional/)
+
+[#007 Neural Networks Representation](http://datahacker.rs/neural_networks_representation/)
+
+[#008 Shallow Neural Network](http://datahacker.rs/shallow_neural_network/)
+
+[#009 Activation functions and their derivatives](http://datahacker.rs/activation-functions-and-their-derivatives/)
+
+[#010A Gradient Descent for Neural Networks](http://datahacker.rs/gradient-descent-for-neural-networks/)
+
+[#010 B How to train a shallow Neural Network with a Gradient Desecent?](http://datahacker.rs/010-b-how-to-train-a-shallow-neural-network-with-a-gradient-desecent/)
+
+[#010 C Random initialization of parameters in a Neural Network](http://datahacker.rs/random-initialization-of-parameters-in-neural-network/)
+
+[#011 Deep L-layer Neural Network](http://datahacker.rs/deep-l-layer-neural-network/)
+
+[#012A Building a Deep Neural Network](http://datahacker.rs/building-a-deep-neural-network/)
+
+[#012 B Building a Deep Neural Network from scratch in Python](http://datahacker.rs/012-b-building-a-deep-neural-network-from-scratch-in-python/)
+
+[#001 CNN Convolutional Neural Networks](http://datahacker.rs/001-cnn-convolutional-neural-networks/)
+
+[#002 CNN Edge detection](http://datahacker.rs/002-cnn-edge-detection/)
+
+[#003 CNN More On Edge Detection](http://datahacker.rs/003-cnn-more-on-edge-detection/)
+
+[#004 CNN Padding](http://datahacker.rs/004-cnn-padding/)
+
+[#005 CNN Strided Convolution](http://datahacker.rs/005-cnn-stried-convolution/)
+
+[#006 CNN Convolution On RGB Images](http://datahacker.rs/006-cnn-convolution-on-rgb-images/)
+
+[#007 CNN One Layer of A ConvNet ](http://datahacker.rs/007-cnn-one-layer-of-a-covolutional-neural-network/)
+
+[#008 CNN An Example of A Convolutional Neural Network](http://datahacker.rs/008-cnn-an-example-of-a-convolutional-neural-network/)
+
+[#009 CNN Pooling Layers](http://datahacker.rs/009-cnn-pooling-layers/)
+
+[#010 CNN An Example of a Neural Network](http://datahacker.rs/010-cnn-an-example-of-a-neural-network/)
+
+[#011 CNN Why convolutions](http://datahacker.rs/011-cnn-why-convolutions/)
+
+[#012 CNN Convolutional Neural Networks – An Overview](http://datahacker.rs/0120-cnn-convolutional-neural-networks-an-overview/)
+
+[#013 A CNN LeNet-5](http://datahacker.rs/013-cnn-latex-lenetenspace-enspace5/)
+
+[#013 B CNN AlexNet](http://datahacker.rs/013-b-alexnet/)
+
+[#013 C CNN VGG 16 and VGG 19](http://datahacker.rs/013-c-cnn-vgg-16-and-vgg-19/)
+
+[#014 CNN Residual nets](http://datahacker.rs/014-cnn-residual-nets/)
+
+[#015 CNN Why ResNets work](http://datahacker.rs/015-cnn-why-resnets-work/)
+
+[#016 CNN Network in Network 1×1 Convolutions](http://datahacker.rs/016-cnn-network-in-network-1x1-convolutions/)
+
+[#017 CNN Inception Network](http://datahacker.rs/017-inception-network/)
+
+[#018 CNN Inception Network – Inception Module](http://datahacker.rs/018-cnn-inception-network/)
+
+[#019 CNN Transfer Learning](http://datahacker.rs/019-cnn-transfer-learning/)
+
+[#020 CNN Data Augmentation](http://datahacker.rs/020-cnn-data-augmentations/)
+
+[#021 CNN Object Localization](http://datahacker.rs/021-object-localization/)
+
+[#022 CNN Landmark Detection](http://datahacker.rs/022-cnn-landmark-detection/)
+
+[#023 CNN Object Detection](http://datahacker.rs/023-cnn-object-detection/)
+
+[#024 CNN Convolutional Operation of Sliding Windows](http://datahacker.rs/024-convolutional-operation-of-sliding-windows/)
+
+[#025 CNN Bounding Box Predictions](http://datahacker.rs/025-cnn/)
