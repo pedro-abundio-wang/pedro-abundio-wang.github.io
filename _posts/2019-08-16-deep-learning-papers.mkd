@@ -38,6 +38,12 @@ Girshik, 2015. Fast R-CNN
 
 Ren et. al, 2016. Faster R-CNN: Towards real-time object detection with region proposal networks
 
+Kaiming He, 2017. Mask R-CNN
+
+Wei Liu, et. al 2015 SSD: Single Shot MultiBox Detector
+
+Jifeng Dai, et. al 2016 R-FCN: Object Detection via Region-based Fully Convolutional Networks
+
 Taigman et. al., 2014. DeepFace closing the gap to human level performance
 
 Schroff et al.,2015, FaceNet: A unified embedding for face recognition and clustering
