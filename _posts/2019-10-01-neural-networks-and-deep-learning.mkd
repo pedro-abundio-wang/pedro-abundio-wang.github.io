@@ -16,7 +16,9 @@ categories: deep-learning
 
 Let’s start with the house price prediction example. Suppose that you have a dataset with six houses and we know the price and the size of these houses. We want to fit a function to predict the price of these houses with respect to its size.
 
+<p align="center">
 ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/12.png)
+</p>
 
 We will put a straight line through these data points. Since we know that our prices cannot be negative, we end up with a horizontal line that passes through 0.
 
