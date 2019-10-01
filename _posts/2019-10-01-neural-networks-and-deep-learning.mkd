@@ -127,6 +127,10 @@ Notation that we will follow is shown in the table below:
 
 Logistic regression is a supervised learning algorithm that we can use when labels are either 0 or 1 and this is the so-called **Binary Classification Problem**. An input feature vector `x` may correspond to an image that we want to recognize as either a cat picture (1) or a non-cat picture (0). That is, we want an algorithm to output the prediction which is an estimate of `y`:
 
+$$ \hat{\gamma}^{(i)} = y^{(i)} (w^T x + b) $$
+
+$$ \hat{y} $$
+
 \(\hat{y}= P\left ( y=1|x \right) \\x\in \mathbb{R}^{n_x}\)
 
 \(\mathrm{Parameters}: w \in R^{n_x}, b \in \mathbb{R}\)
