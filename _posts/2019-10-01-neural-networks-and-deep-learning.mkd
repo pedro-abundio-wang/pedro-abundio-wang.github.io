@@ -16,23 +16,23 @@ categories: deep-learning
 
 Let’s start with the house price prediction example. Suppose that you have a dataset with six houses and we know the price and the size of these houses. We want to fit a function to predict the price of these houses with respect to its size.
 
-![](Images/12.png)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/12.png)
 
 We will put a straight line through these data points. Since we know that our prices cannot be negative, we end up with a horizontal line that passes through 0.
 
-![](Images/13.png)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/13.png)
 
 The blue line is the function for predicting the price of the house as a function of its size. You can think of this function as a very simple neural network.
 
 The input to the neural network is the size of a house, denoted by `x`, which goes into a single neuron and then outputs the predicted price, which we denote by `y`.
 
-![](Images/14.png)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/14.png)
 
 If this is a neural network with a single neuron, a much larger neural network is formed by taking many of the single neurons and stacking them together.
 
 A basic Neural Network with more features is ilustrated in the following image.
 
-![](Images/15.jpg)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/15.jpg)
 
 ### Supervised learning with neural networks
 
@@ -40,7 +40,7 @@ In supervised learning, we have some input `x`, and we want to learn a function 
 
 Here are some other fields where neural networks have been applied very effectively.
 
-![](Images/16.png)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/16.png)
 
 We might input an image and want to output an index from one to a thousand, trying to tell if this picture might be one of a thousand different image classes. This can be used for photo tagging.
 
@@ -50,7 +50,7 @@ Machine translation has also made huge strikes thanks to deep learning where now
 
 Different types of neural networks are useful for different applications.
 
-![](Images/17.png)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/17.png)
 
   - In the real estate application, we use a universally **Standard Neural Network** architecture.
   - For image applications we’ll often use **Convolutional Neural Network (CNN)**.
@@ -65,11 +65,11 @@ Structured Data means basically databases of data. In house price prediction, yo
 
 In predicting whether or not a user will click on an ad, we might have information about the user, such as the age, some information about the ad, and then labels that you’re trying to predict.
 
-![](Images/18.png)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/18.png)
 
 Structured data means, that each of the features, such as a size of the house, the number of bedrooms, or the age of a user, have a very well-defined meaning. In contrast, unstructured data refers to things like audio, raw audio, or images where you might want to recognize what’s in the image or text. Here, the features might be the pixel values in an image or the individual words in a piece of text.
 
-![](Images/19.png)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/19.png)
 
 Neural networks, computers are now much better at interpreting unstructured data as compared to just a few years ago. This creates opportunities for many new exciting applications that use speech recognition, image recognition, natural language processing of text.
 
@@ -79,7 +79,7 @@ Many of the ideas of deep learning (neural networks) have been around for decade
 
 If we plot the performance of traditional learning algorithms such as Support Vector Machine or Logistic Regression as a function of the amount of data. We will get the following curve. In detail, even as you accumulate more data, usually the performance of traditional learning algorithms, plateaus. This means its learning curve flattens out, and the algorithm stops improving even as you give it more data. It was as if the traditional learning algorithms didn’t know what to do with all the data we now have.
 
-![](Images/11.png)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/11.png)
 
 With neural networks, it turns out that if you train a very large neural network then its performance often keeps getting better and better.
 
@@ -96,7 +96,7 @@ Three of the biggest drivers of recent progress have been:
 
 To conclude, often you have an idea for a neural network architecture and you want to implement it in code. Fast computation is important because the process of training a neural network is very iterative and can be time-consuming. Implementing our idea then lets us run an experiment which tells us how well our neural network does. Then, by looking at it, you go back to change the details of our neural network and then you go around this circle over and over, until we get the desired performance.
 
-![](Images/20.png)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/20.png)
 
 ## Neural Networks Basics
 
@@ -104,7 +104,7 @@ To conclude, often you have an idea for a neural network architecture and you wa
 
 Binary classification is the task of classifying elements of a given set into two classification.
 
-![](Images/21.png)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/21.png)
 
 A binary classification problem:
 
@@ -117,23 +117,21 @@ Image representation in a computer
 
 The computer stores 3 separate matrices corresponding to the red, green and blue (RGB) color channels of the image. If the input image is 64 by 64 pixels, then we would have three 64 by 64 matrices corresponding to the red, green and blue pixel intensity values for our image. For a 64 by 64 image – the total dimension of this vector will be 64 * 64 * 3 = 12288.
 
-![](Images/22.png)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/22.png)
 
 Notation that we will follow is shown in the table below:
 
-![](Images/23.png)
+![](/images/deep-learning-specialization/neural-networks-and-deep-learning/23.png)
 
 ### Logistic regression
 
 Logistic regression is a supervised learning algorithm that we can use when labels are either 0 or 1 and this is the so-called **Binary Classification Problem**. An input feature vector `x` may correspond to an image that we want to recognize as either a cat picture (1) or a non-cat picture (0). That is, we want an algorithm to output the prediction which is an estimate of `y`:
 
-$$ \hat{\gamma}^{(i)} = y^{(i)} (w^T x + b) $$
-
 $$ \hat{y} $$
 
-\(\hat{y}= P\left ( y=1|x \right) \\x\in \mathbb{R}^{n_x}\)
+$\hat{y}= P\left ( y=1|x \right) \\x\in \mathbb{R}^{n_x}$
 
-\(\mathrm{Parameters}: w \in R^{n_x}, b \in \mathbb{R}\)
+$\mathrm{Parameters}: w \in R^{n_x}, b \in \mathbb{R}$
 
 
 - Algorithm is used for classification algorithm of 2 classes.
@@ -193,21 +191,21 @@ $$ \hat{y} $$
 
 - [computation graph](https://colah.github.io/posts/2015-08-Backprop/)
 - Its a graph that organizes the computation from bottom to top.
-  - ![](Images/02.png)
+  - ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/02.png)
 
 ### Derivatives with a Computation Graph
 
 - Calculus chain rule says:
   If `x -> y -> z`          (x effect y and y effects z)
   Then `d(z)/d(x) = d(z)/d(y) * d(y)/d(x)`
-  - ![](Images/03.png)
+  - ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/03.png)
 - We compute the derivatives on a graph from top to bottom and it will be a lot more easier.
 - `dvar` means the derivatives of a final output variable with respect to various intermediate quantities.
 
 ### Logistic Regression Gradient Descent
 
 - In the video he discussed the derivatives of gradient decent example for one sample with two features `x1` and `x2`.
-  - ![](Images/04.png)
+  - ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/04.png)
 
 ### Gradient Descent on m Examples
 
@@ -224,7 +222,7 @@ $$ \hat{y} $$
   ```
 
 - So we have:
-  ![](Images/09.png)
+  ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/09.png)
 
 - Then from right to left we will calculate derivations compared to the result:
 
@@ -373,9 +371,9 @@ $$ \hat{y} $$
 ### Computing a Neural Network's Output
 
 - Equations of Hidden layers:
-  - ![](Images/05-a.png)
-  - ![](Images/05-b.png)
-  - ![](Images/05-c.png)
+  - ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/05-a.png)
+  - ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/05-b.png)
+  - ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/05-c.png)
 - Here are some informations about the last image:
   - `noOfHiddenNeurons = 4`
   - `Nx = 3`
@@ -535,8 +533,8 @@ $$ \hat{y} $$
   # Hint there are transposes with multiplication because to keep dimensions correct
   ```
 - How we derived the 6 equations of the backpropagation:   
-  ![](Images/06-a.png)
-  ![](Images/06-b.png)
+  ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/06-a.png)
+  ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/06-b.png)
 
 ### Random Initialization
 
@@ -622,7 +620,7 @@ $$ \hat{y} $$
 - Forward and back propagation for a layer l:
   - ![Untitled](Images/10.png)
 - Deep NN blocks:
-  - ![](Images/08.png)
+  - ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/08.png)
 
 ### Forward and Backward Propagation
 
@@ -683,7 +681,7 @@ $$ \hat{y} $$
 
 
 - Hidden layers predicts connection between inputs automatically, thats what deep learning is good at.
-  - ![](Images/Others/01.jpg)
+  - ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/01.jpg)
 - Deep Neural Network consists of more hidden layers
-  - ![](Images/Others/02.png)
+  - ![](/images/deep-learning-specialization/neural-networks-and-deep-learning/07.png)
 - Each Input will be connected to the hidden layer and the NN will decide the connections.
