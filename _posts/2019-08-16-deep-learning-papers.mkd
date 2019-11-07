@@ -102,6 +102,8 @@ Graves et al., 2006. Connectionist Temporal Classification: Labeling unsegmented
 
 [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167)
 
+[Stochastic Weight Averaging](https://arxiv.org/abs/1803.05407)
+
 ## Deep Reinforcement Learning
 
 Silver, Schrittwieser, Simonyan et al. (2017): Mastering the game of Go without human knowledge
