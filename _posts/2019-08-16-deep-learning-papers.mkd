@@ -140,6 +140,8 @@ Bellemare et al. (2017):Unifying Count-Based Exploration and Intrinsic Motivatio
 
 Koren, Yehuda, Robert Bell, and Chris Volinsky：Matrix factorization techniques for recommender systems
 
+Sedhain, Suvash, et al. AutoRec: Autoencoders meet collaborative filtering
+
 ## Others
 
 A guide to convolution arithmetic for deep learning
