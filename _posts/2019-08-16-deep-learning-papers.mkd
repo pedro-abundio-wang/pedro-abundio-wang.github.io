@@ -136,6 +136,10 @@ Finn et al. (2017): Model-Agnostic Meta-Learning for Fast Adaptation of Deep Net
 
 Bellemare et al. (2017):Unifying Count-Based Exploration and Intrinsic Motivation
 
+## Recommendation System
+
+Koren, Yehuda, Robert Bell, and Chris Volinsky：Matrix factorization techniques for recommender systems
+
 ## Others
 
 A guide to convolution arithmetic for deep learning
