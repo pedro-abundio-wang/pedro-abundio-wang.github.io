@@ -72,12 +72,6 @@ Mikolov et. al., 2013, Linguistic regularities in continuous space word represen
 
 Bengio et. al., 2003, A neural probabilistic language model
 
-Mikolov et. al., 2013. Efficient estimation of word representations in vector space.
-
-Mikolov et. al., 2013. Distributed representation of words and phrases and their compositionality
-
-Pennington et. al., 2014. GloVe: Global vectors for word representation
-
 Bolukbasi et. al., 2016. Man is to computer programmer as woman is to homemaker? Debiasing word embeddings
 
 Sutskever et al., 2014. Sequence to sequence learning with neural networks
