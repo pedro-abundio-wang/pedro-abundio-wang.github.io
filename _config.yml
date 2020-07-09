@@ -1,22 +1,45 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Temporary GitPage Host setup
+title: Blogs
+baseurl: "/pedro-abundio-wang"
 
-# Site settings
-title: Pedro Abundio Wang Blog
-email: pedro.abundio.wang@gmail.com
-description: https://pedro-abundio-wang.github.io/.
-baseurl: "" # the subpath of your site.
-url: "https://pedro-abundio-wang.github.io/" # the base hostname & protocol for your site
+# Theme settings
+doks:
+    color_theme: blue
+    header:
+        logo:
+            text: Blogs
+            image: false
+        nav:
+            - item_name: Machine Learning
+              item_url: '/machine-learning'
+    footer:
+        content:
+            logo:
+                text:
+                image:
+            copyright: Copyright &copy; 2020. - Pedro Abundio Wang <br>All rights reserved.
+        social_list:
+    google_analytics: UA-124237072-3
+    comments:
+        disqus_forum_shortname: # Add your disqus forum shortname to activate comments
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
-  extensions: fenced_code_blocks
+# SASS settings
+sass:
+    sass_dir: ./doks-theme/_sass
+    style: :compressed
+
+# Jekyll settings
+plugins_dir: ./_plugins
+layouts_dir: ./doks-theme/_layouts
+includes_dir: ./doks-theme/_includes
+exclude: [ 'README.md', 'CHANGELOG.md', 'scripts']
+permalink: /:title/
+
+# Course logistics
+course:
+    links:
+        papers:
+            icon:
+            content: Machine Learning
+            url: '/machine-learning'
+            external_url: false
