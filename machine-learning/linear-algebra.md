@@ -272,29 +272,29 @@ If the eigenvectors of $$A$$ are linearly independent, then the matrix $$X$$ wil
 
 ### Eigenvalues and Eigenvectors of Symmetric Matrices
 
-Two remarkable properties come about when we look at the eigenvalues and eigenvectors of a symmetric matrix $A \in S^n$. First, it can be shown that all the eigenvalues of $$A$$ are real. Secondly, the eigenvectors of $$A$$ are orthonormal, i.e., the matrix $$X$$ defined above is an orthonormal matrix (for this reason, we denote the matrix of eigenvectors as $U$ in this case). We can therefore represent $$A$$ as $A = U \Lambda U^T$, remembering from above that the inverse of an orthonormal matrix is just its transpose.
+Two remarkable properties come about when we look at the eigenvalues and eigenvectors of a symmetric matrix $$A \in S^n$$. First, it can be shown that all the eigenvalues of $$A$$ are real. Secondly, the eigenvectors of $$A$$ are orthonormal, i.e., the matrix $$X$$ defined above is an orthonormal matrix (for this reason, we denote the matrix of eigenvectors as $$U$$ in this case). We can therefore represent $$A$$ as $$A = U \Lambda U^T$$, remembering from above that the inverse of an orthonormal matrix is just its transpose.
 
-Using this, we can show that the definiteness of a matrix depends entirely on the sign of its eigenvalues. Suppose $A \in S^n = U \Lambda U^T$. Then
+Using this, we can show that the definiteness of a matrix depends entirely on the sign of its eigenvalues. Suppose $$A \in S^n = U \Lambda U^T$$. Then
 
 $$ x^T A x = x^T U \Lambda U^T x = y^T \Lambda y = \sum_{i=1}^{n} λ_i y_i^2 $$
 
-where $y = U^T x$ (and since $U$ is full rank, any vector $y \in R^n$ can be represented in this form). Because $y_i^2$ is always positive, the sign of this expression depends entirely on the $\lambda_i$’s. If all $\lambda_i > 0$, then the matrix is positive definite; if all $\lambda_i \ge 0$, it is positive semidefinite. Likewise, if all $\lambda_i < 0$ or $\lambda_i \le 0$, then $$A$$ is negative definite or negative semidefinite respectively. Finally, if $$A$$ has both positive and negative eigenvalues, it is indefinite.
+where $$y = U^T x$$ (and since $$U$$ is full rank, any vector $$y \in R^n$$ can be represented in this form). Because $$y_i^2$$ is always positive, the sign of this expression depends entirely on the $$\lambda_i$$’s. If all $$\lambda_i > 0$$, then the matrix is positive definite; if all $$\lambda_i \ge 0$$, it is positive semidefinite. Likewise, if all $$\lambda_i < 0$$ or $$\lambda_i \le 0$$, then $$A$$ is negative definite or negative semidefinite respectively. Finally, if $$A$$ has both positive and negative eigenvalues, it is indefinite.
 
-An application where eigenvalues and eigenvectors come up frequently is in maximizing some function of a matrix. In particular, for a matrix $A \in S^n$, consider the following maximization problem.
+An application where eigenvalues and eigenvectors come up frequently is in maximizing some function of a matrix. In particular, for a matrix $$A \in S^n$$, consider the following maximization problem.
 
 $$ max_{x \in R^n} \text{ } x^T A x \text{ subject to } \Vert x \Vert_2^2 = 1 $$
 
-i.e., we want to find the vector (of norm $1$) which maximizes the quadratic form. Assuming the eigenvalues are ordered as $\lambda_1 \ge \lambda_2 \ge \dots \ge \lambda_n$, the optimal $$X$$ for this optimization problem is $x_1$, the eigenvector corresponding to $\lambda_1$. In this case the maximal value of the quadratic form is $\lambda_1$. Similarly, the optimal solution to the minimization problem,
+i.e., we want to find the vector (of norm $$1$$) which maximizes the quadratic form. Assuming the eigenvalues are ordered as $$\lambda_1 \ge \lambda_2 \ge \dots \ge \lambda_n$$, the optimal $$X$$ for this optimization problem is $$x_1$$, the eigenvector corresponding to $$\lambda_1$$. In this case the maximal value of the quadratic form is $$\lambda_1$$. Similarly, the optimal solution to the minimization problem,
 
 $$ min_{x \in R^n} \text{ } x^T A x \text{ subject to } \Vert x \Vert_2^2 = 1 $$
 
-is $x_n$, the eigenvector corresponding to $\lambda_n$, and the minimal value is $\lambda_n$.
+is $$x_n$$, the eigenvector corresponding to $$\lambda_n$$, and the minimal value is $$\lambda_n$$.
 
 ## Matrix Calculus
 
 ### The Gradient
 
-Suppose that $f : R^{m \times n} \to R$ is a function that takes as input a matrix $$A$$ of size $m \times n$ and returns a real value. Then the **gradient** of $f$ (with respect to $A \in R^{m \times n}$) is the matrix of partial derivatives, defined as:
+Suppose that $$f : R^{m \times n} \to R$$ is a function that takes as input a matrix $$A$$ of size $$m \times n$$ and returns a real value. Then the **gradient** of $$f$$ (with respect to $$A \in R^{m \times n}$$) is the matrix of partial derivatives, defined as:
 
 $$
 \nabla_A f(A) \in R^{m \times n} =
@@ -308,11 +308,11 @@ $$
 \right)
 $$
 
-i.e., an $m \times n$ matrix with
+i.e., an $$m \times n$$ matrix with
 
 $$ {(\nabla_A f(A))}_{ij} = \frac{\partial f(A)}{\partial A_{ij}} $$
 
-Note that the size of $\nabla_A f(A)$ is always the same as the size of $A$. So if, in particular, $$A$$ is just a vector $x \in R^n$,
+Note that the size of $$\nabla_A f(A)$$ is always the same as the size of $$A$$. So if, in particular, $$A$$ is just a vector $$x \in R^n$$,
 
 $$
 \nabla_x f(x) =
@@ -326,17 +326,17 @@ $$
 \right)
 $$
 
-It is very important to remember that the gradient of a function is only defined if the function is real-valued. We can not, for example, take the gradient of $Ax, A \in R^{n \times n}$ with respect to $x$, since this quantity is vector-valued.
+It is very important to remember that the gradient of a function is only defined if the function is real-valued. We can not, for example, take the gradient of $$Ax, A \in R^{n \times n}$$ with respect to $$x$$, since this quantity is vector-valued.
 
 It follows directly from the equivalent properties of partial derivatives that:
 
-* $\nabla_x (f(x) + g(x)) = \nabla_x f(x) + \nabla_x g(x)$
+* $$\nabla_x (f(x) + g(x)) = \nabla_x f(x) + \nabla_x g(x)$$
 
-* $\text{For } t \in R, \nabla_x (t f(x)) = t \text{ } \nabla_x f(x)$
+* $$\text{For } t \in R, \nabla_x (t f(x)) = t \text{ } \nabla_x f(x)$$
 
 ### The Hessian
 
-Suppose that $f : R^n \to R$ is a function that takes a vector in $R^n$ and returns a real number. Then the **Hessian** matrix with respect to $x$, written $\nabla_x^2 f(x)$ or simply as $H$ is the $n \times n$ matrix of partial derivatives,
+Suppose that $$f : R^n \to R$$ is a function that takes a vector in $$R^n$$ and returns a real number. Then the **Hessian** matrix with respect to $$x$$, written $$\nabla_x^2 f(x)$$ or simply as $$H$$ is the $$n \times n$$ matrix of partial derivatives,
 
 $$
 \nabla_x^2 f(x) \in R^{n \times n} =
@@ -350,7 +350,7 @@ $$
 \right)
 $$
 
-In other words, $\nabla_x^2 f(x) \in R^{n \times n}$, with
+In other words, $$\nabla_x^2 f(x) \in R^{n \times n}$$, with
 
 $$ {(\nabla_x^2 f(x))}_{ij} = \frac{\partial^2 f(x)}{\partial x_i \partial x_j} $$
 
@@ -358,11 +358,11 @@ Note that the Hessian is always symmetric, since
 
 $$ \frac{\partial^2 f(x)}{\partial x_i \partial x_j} = \frac{\partial^2 f(x)}{\partial x_j \partial x_i} $$
 
-Similar to the gradient, the Hessian is defined only when $f(x)$ is real-valued.
+Similar to the gradient, the Hessian is defined only when $$f(x)$$ is real-valued.
 
 It is natural to think of the gradient as the analogue of the first derivative for functions of vectors, and the Hessian as the analogue of the second derivative (and the symbols we use also suggest this relation). This intuition is generally correct, but there a few caveats to keep in mind.
 
-First, for real-valued functions of one variable $f : R \to R$, it is a basic definition that the second derivative is the derivative of the first derivative, i.e.,
+First, for real-valued functions of one variable $$f : R \to R$$, it is a basic definition that the second derivative is the derivative of the first derivative, i.e.,
 
 $$ \frac{\partial^2 f(x)}{\partial x^2} = \frac{\partial}{\partial x} \frac{\partial}{\partial x} f(x) $$
 
@@ -380,7 +380,7 @@ $$
 \right)
 $$
 
-and this expression is not defined. Therefore, it is not the case that the Hessian is the gradient of the gradient. However, this is almost true, in the following sense: If we look at the $i$th entry of the gradient ${(\nabla_x f(x))}_i = \partial f(x) / \partial x_i$, and take the gradient with respect to $$X$$ we get
+and this expression is not defined. Therefore, it is not the case that the Hessian is the gradient of the gradient. However, this is almost true, in the following sense: If we look at the $$i$$th entry of the gradient $${(\nabla_x f(x))}_i = \partial f(x) / \partial x_i$$, and take the gradient with respect to $$X$$ we get
 
 $$
 \nabla_x \frac{\partial f(x)}{\partial x_i} =
@@ -394,7 +394,7 @@ $$
 \right)
 $$
 
-which is the $i$ th column (or row) of the Hessian. Therefore,
+which is the $$i$$ th column (or row) of the Hessian. Therefore,
 
 $$
 \nabla_x^2 f(x) =
@@ -405,13 +405,13 @@ $$
 \right)
 $$
 
-If we don’t mind being a little bit sloppy we can say that (essentially) $\nabla_x^2 f(x) = \nabla_x (\nabla_x f(x))^T$, so long as we understand that this really means taking the gradient of each entry of $(\nabla_x f(x))^T$, not the gradient of the whole vector.
+If we don’t mind being a little bit sloppy we can say that (essentially) $$\nabla_x^2 f(x) = \nabla_x (\nabla_x f(x))^T$$, so long as we understand that this really means taking the gradient of each entry of $$(\nabla_x f(x))^T$$, not the gradient of the whole vector.
 
 ### Gradients and Hessians of Quadratic and Linear Functions
 
 Now let’s try to determine the gradient and Hessian matrices for a few simple functions.
 
-For $x \in R^n$, let $f(x) = b^T x$ for some known vector $b \in R^n$. then
+For $$x \in R^n$$, let $$f(x) = b^T x$$ for some known vector $$b \in R^n$$. then
 
 $$ f(x) = \sum_{i=1}^{n} b_i x_i $$
 
@@ -421,7 +421,7 @@ $$ \frac{\partial f(x)}{\partial x_k} = \frac{\partial}{\partial x_k} \sum_{i=1}
 
 From this we can easily see that $\nabla_x b^T x = b$. This should be compared to the analogous situation in single variable calculus, where $\partial / (\partial x) ax = a$.
 
-Now consider the quadratic function $f(x) = x^T A x$ for $A \in S^n$. Remember that
+Now consider the quadratic function $$f(x) = x^T A x$$ for $$A \in S^n$$. Remember that
 
 $$ f(x) = \sum_{i=1}^{n} \sum_{j=1}^{n} x_i A_{ij} x_j $$
 
@@ -431,27 +431,27 @@ $$
 \frac{\partial f(x)}{\partial x_k} = \frac{\partial}{\partial x_k} \sum_{i=1}^{n} \sum_{j=1}^{n} x_i A_{ij} x_j = \sum_{i=1}^{n} x_i A_{ik} + \sum_{j=1}^{n} A_{kj} x_j = 2 \sum_{j=1}^{n} A_{kj} x_j
 $$
 
-where the last equality follows since $$A$$ is symmetric (which we can safely assume, since it is appearing in a quadratic form). Note that the $k$th entry of $\nabla_x f(x)$ is just the inner product of the $k$th row of $$A$$ and $x$. Therefore, $\nabla_x x^T A x = 2Ax$. Again, this should remind you of the analogous fact in single-variable calculus, that $\partial / (\partial x) a x^2 = 2ax$
+where the last equality follows since $$A$$ is symmetric (which we can safely assume, since it is appearing in a quadratic form). Note that the $$k$$th entry of $$\nabla_x f(x)$$ is just the inner product of the $$k$$th row of $$A$$ and $$x$$. Therefore, $$\nabla_x x^T A x = 2Ax$$. Again, this should remind you of the analogous fact in single-variable calculus, that $$\partial / (\partial x) a x^2 = 2ax$$
 
-Finally, lets look at the Hessian of the quadratic function $f(x) = x^T A x$ (it should be obvious that the Hessian of a linear function $b^T x$ is zero). This is even easier than determining the gradient of the function, since
+Finally, lets look at the Hessian of the quadratic function $$f(x) = x^T A x$$ (it should be obvious that the Hessian of a linear function $$b^T x$$ is zero). This is even easier than determining the gradient of the function, since
 
 $$ \frac{\partial^2 f(x)}{\partial x_k \partial x_l} = \frac{\partial^2}{\partial x_k \partial x_l} \sum_{i=1}^{n} \sum_{j=1}^{n} x_i A_{ij} x_j = A_{kl} + A_{lk} = 2A_{kl} $$
 
-Therefore, it should be clear that $\nabla_x^2 x^T A x = 2A$ , which should be entirely expected (and again analogous to the single-variable fact that $\partial^2 / (\partial x^2) ax^2 = 2a$ ).
+Therefore, it should be clear that $$\nabla_x^2 x^T A x = 2A$$, which should be entirely expected (and again analogous to the single-variable fact that $$\partial^2 / (\partial x^2) ax^2 = 2a$$).
 
 To recap, if $$A$$ symmetric
 
-* $\nabla_x b^T x = b$
+* $$\nabla_x b^T x = b$$
 
-* $\nabla_x x^T A x = 2Ax$
+* $$\nabla_x x^T A x = 2Ax$$
 
-* $\nabla_x^2 x^T A x = 2A$
+* $$\nabla_x^2 x^T A x = 2A$$
 
 ### Least Squares
 
-Suppose we are given matrices $A \in R^{m \times n}$ (for simplicity we assume $$A$$ is full rank) and a vector $b \in R^m$ such that $b \notin R(A)$. In this situation we will not be able to find a vector $x \in R^n$, such that $Ax = b$, so instead we want to find a vector $$X$$ such that $Ax$ is as close as possible to $b$, as measured by the square of the Euclidean norm ${\Vert Ax-b \Vert}_2^2$.
+Suppose we are given matrices $$A \in R^{m \times n}$$ (for simplicity we assume $$A$$ is full rank) and a vector $$b \in R^m$$ such that $$b \notin R(A)$$. In this situation we will not be able to find a vector $$x \in R^n$$, such that $$Ax = b$$, so instead we want to find a vector $$X$$ such that $Ax$ is as close as possible to $$b$$, as measured by the square of the Euclidean norm $${\Vert Ax-b \Vert}_2^2$$.
 
-Using the fact that ${\Vert x \Vert}_2^2 = x^T x$, we have
+Using the fact that $${\Vert x \Vert}_2^2 = x^T x$$, we have
 
 $$ {\Vert Ax-b \Vert}_2^2 = (Ax - b)^T (Ax - b) = x^T A^T Ax - 2 b^T Ax + b^T b $$
 
@@ -465,7 +465,7 @@ $$ x = (A^T A)^{-1} A^T b $$
 
 ### Gradients of the Determinant
 
-Now lets consider gradient of the determinant respect to a matrix, namely for $A \in R^{n \times n}$, we want to find $\nabla_A \vert A \vert$. From the definition of determinants that
+Now lets consider gradient of the determinant respect to a matrix, namely for $$A \in R^{n \times n}$$, we want to find $$\nabla_A \vert A \vert$$. From the definition of determinants that
 
 $$ \vert A \vert = \sum_{i=1}^{n} (-1)^{i+j} a_{ij} \vert A_{ij} \vert \text{ for any } j \in (1, \dots, n) $$
 
@@ -477,7 +477,7 @@ From this it immediately follows from the properties of the adjoint that
 
 $$ \nabla_A \vert A \vert = (adj(A))^T = \vert A \vert A^{-T} $$
 
-Now lets consider the function $f : S_{+ +}^n \to R, f(A) = log \vert A \vert$. Note that we have to restrict the domain of $f$ to be the positive definite matrices, since this ensures that $\vert A \vert > 0$, so that the log of $\vert A \vert$ is a real number. In this case we can use the chain rule (nothing fancy, just the ordinary chain rule from single-variable calculus) to see that
+Now lets consider the function $$f : S_{+ +}^n \to R, f(A) = log \vert A \vert$$. Note that we have to restrict the domain of $$f$$ to be the positive definite matrices, since this ensures that $$\vert A \vert > 0$$, so that the log of $$\vert A \vert$$ is a real number. In this case we can use the chain rule (nothing fancy, just the ordinary chain rule from single-variable calculus) to see that
 
 $$ \frac{\partial log \vert A \vert}{\partial A_{ij}} = \frac{\partial log \vert A \vert}{\partial \vert A \vert} \frac{\partial \vert A \vert}{\partial A_{ij}} = \frac{1}{\vert A \vert} \frac{\partial \vert A \vert}{\partial A_{ij}} $$
 
@@ -485,7 +485,7 @@ From this is should be obvious that
 
 $$ \nabla_A log \vert A \vert = \frac{1}{\vert A \vert} \nabla_A \vert A \vert = A^{-1} $$
 
-where we can drop the transpose in the last expression because $$A$$ is symmetric. Note the similarity to the single-valued case , where $\partial / (\partial x) logx = 1 / x$.
+where we can drop the transpose in the last expression because $$A$$ is symmetric. Note the similarity to the single-valued case , where $$\partial / (\partial x) logx = 1 / x$$.
 
 ### Eigenvalues as Optimization
 
@@ -493,12 +493,12 @@ Finally, we use matrix calculus to solve an optimization problem in a way that l
 
 $$ max_{x \in R^n} \text{ } x^T A x \text{ subject to } {\Vert x \Vert}_2^2 = 1 $$
 
-for a symmetric matrix $A \in S^n$. A standard way of solving optimization problems with equality constraints is by forming the **Lagrangian**. The Lagrangian in this case can be given by
+for a symmetric matrix $$A \in S^n$$. A standard way of solving optimization problems with equality constraints is by forming the **Lagrangian**. The Lagrangian in this case can be given by
 
 $$ L(x, \lambda) = x^T A x  + \lambda (1 - x^T x) = x^T A x + \lambda - \lambda x^T x $$
 
-where $\lambda$ is called the Lagrange multiplier. It can be established that for $x ^ \ast$ to be a optimal point to the problem, the gradient of the Lagrangian has to be zero at $x ^ \ast$. That is,
+where $$\lambda$$ is called the Lagrange multiplier. It can be established that for $$x ^ \ast$$ to be a optimal point to the problem, the gradient of the Lagrangian has to be zero at $$x ^ \ast$$. That is,
 
 $$ \nabla_x L(x, \lambda) = \nabla_x (x^T A x + \lambda - \lambda x^T x) = 2Ax - 2 \lambda x = 0 $$
 
-Notice that this is just the linear equation $A x = \lambda x$. This shows that the only points which can possibly maximize (or minimize) $x^T A x$ assuming $x^T x = 1$ are the eigenvectors of $A$.
+Notice that this is just the linear equation $$A x = \lambda x$$. This shows that the only points which can possibly maximize (or minimize) $$x^T A x$$ assuming $$x^T x = 1$$ are the eigenvectors of $$A$$.
