@@ -21,9 +21,6 @@ page_nav:
         url: '#'
 ---
 
-* TOC
-{:toc}
-
 # Introduction to Machine Learning
 
 ## What Is Machine Learning

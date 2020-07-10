@@ -21,9 +21,6 @@ page_nav:
         url: '#'
 ---
 
-* TOC
-{:toc}
-
 ## What is version control?
 
 The VCSs solve one of the most common problems of software development: the fear for changing the software. A VCS will help you to get rid of being scared about changing your code.

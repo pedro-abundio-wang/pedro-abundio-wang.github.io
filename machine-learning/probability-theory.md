@@ -21,9 +21,6 @@ page_nav:
         url: '#'
 ---
 
-* TOC
-{:toc}
-
 ## Probability Theory
 
 ### Probability Space
