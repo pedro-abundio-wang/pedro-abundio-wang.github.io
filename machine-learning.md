@@ -9,16 +9,16 @@ description:
 
 # Grid navigation
 grid_navigation:
-    - title: Python Numpy Tutorial
+    - title: Linear Algebra
       excerpt:
-      cta: 
-      url: 'python-numpy-tutorial'
-    - title: K Nearest Neighbor
+      cta:
+      url: 'linear-algebra'
+    - title: Probability Theory
       excerpt:
-      cta: 
-      url: 'image-classification'
-    - title: Linear Classification
+      cta:
+      url: 'probability-theory'
+    - title: Machine Learning
       excerpt:
-      cta: 
-      url: 'linear-classify'	  
+      cta:
+      url: 'machine-learning'
 ---

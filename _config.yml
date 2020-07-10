@@ -1,13 +1,13 @@
 # Temporary GitPage Host setup
-title: Blogs
-baseurl: "/pedro-abundio-wang"
+title: Free Will
+baseurl: "/ai"
 
 # Theme settings
 doks:
     color_theme: blue
     header:
         logo:
-            text: Blogs
+            text: Free Will
             image: false
         nav:
             - item_name: Machine Learning
@@ -38,7 +38,7 @@ permalink: /:title/
 # Course logistics
 course:
     links:
-        papers:
+        machine-learning:
             icon:
             content: Machine Learning
             url: '/machine-learning'
