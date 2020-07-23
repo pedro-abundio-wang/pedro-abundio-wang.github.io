@@ -12,6 +12,14 @@ doks:
         nav:
             - item_name: Machine Learning
               item_url: '/machine-learning'
+            - item_name: Deep Learning
+              item_url: '/deep-learning'
+            - item_name: Computer Vision
+              item_url: '/computer-vision'
+            - item_name: NLP/Speech
+              item_url: '/nlp-speech'
+            - item_name: Reinforcement Learning
+              item_url: '/reinforcement-learning'              
     footer:
         content:
             logo:
@@ -42,4 +50,24 @@ course:
             icon:
             content: Machine Learning
             url: '/machine-learning'
+            external_url: false
+        deep-learning:
+            icon:
+            content: Deep Learning
+            url: '/deep-learning'
+            external_url: false
+        computer-vision:
+            icon:
+            content: Computer Vision
+            url: '/computer-vision'
+            external_url: false
+        nlp-speech:
+            icon:
+            content: NLP/Speech
+            url: '/nlp-speech'
+            external_url: false
+        reinforcement-learning:
+            icon:
+            content: Reinforcement Learning
+            url: '/reinforcement-learning'
             external_url: false
