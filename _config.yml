@@ -8,18 +8,7 @@ doks:
     header:
         logo:
             text: Free Will
-            image: false
-        nav:
-            - item_name: Machine Learning
-              item_url: '/machine-learning'
-            - item_name: Deep Learning
-              item_url: '/deep-learning'
-            - item_name: Computer Vision
-              item_url: '/computer-vision'
-            - item_name: NLP/Speech
-              item_url: '/nlp-speech'
-            - item_name: Reinforcement Learning
-              item_url: '/reinforcement-learning'              
+            image: false           
     footer:
         content:
             logo:
