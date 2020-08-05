@@ -89,7 +89,7 @@ This method looks at every example in the entire training set on every step, and
 
 the contours of a quadratic function and the trajectory taken by batch gradient descent
 
-![contours](/images/machine-learning/contours.png)
+{% include image.html description="contours" image="machine-learning/contours.png" caption="false"%}
 
 There is an alternative to batch gradient descent that also works very well. Consider the following algorithm:
 
@@ -157,7 +157,7 @@ which we recognize to be $$J(\theta)$$, our original least-squares cost function
 
 ### Locally Weighted Linear Regression
 
-![LWR](/images/machine-learning/LWR.png)
+{% include image.html description="LWR" image="machine-learning/LWR.png" caption="false"%}
 
 The choice of features is important to ensuring good performance of a learning algorithm. The **locally weighted linear regression (LWR)** algorithm which, assuming there is sufficient training data, makes the choice of features less critical.
 
@@ -195,7 +195,7 @@ h_\theta(x) &= g(z) = \frac{1}{1 + e^{-z}} \text{ with } z = \theta^T x \\
 
 $$g(z)$$ is called the **logistic function** or the **sigmoid function**. The plot of $$g(z)$$:
 
-![logistic function](/images/machine-learning/logistic-function.png)
+{% include image.html description="logistic-function" image="machine-learning/logistic-function.png" caption="true"%}
 
 $$g(z)$$ tends towards $$1$$ as $$z \to +\infty$$, and $$g(z)$$ tends towards $$0$$ as $$z \to -\infty$$. $$g(z)$$ is always bounded between $$0$$ and $$1$$.
 
@@ -279,7 +279,7 @@ Approximating the function $$f$$ via a linear function that is tangent to $$f$$ 
 
 Picture of the Newton method in action:
 
-![newton method](/images/machine-learning/newton-method.png)
+{% include image.html description="newton-method" image="machine-learning/newton-method.png" caption="true"%}
 
 The maxima of $$\ell$$ correspond to points where its derivative $\ell'(\theta)$ is zero. So, by letting $$f(\theta) = \ell'(\theta)$$, we can use the same algorithm to maximize $$\ell$$, and we obtain update rule:
 
@@ -627,7 +627,7 @@ $$ \begin{align*}
 
 Pictorially, what the algorithm is doing can be seen in as follows:
 
-![gda](/images/machine-learning/gda.png)
+{% include image.html description="gda" image="machine-learning/gda.png" caption="true"%}
 
 Shown in the figure are the training set, as well as the contours of the two Gaussian distributions that have been fit to the data in each of the two classes. Note that the two Gaussians have contours that are the same shape and orientation, since they share a covariance matrix $$\Sigma$$, but they have different means $$\mu_0$$ and $$\mu_1$$. Also shown in the figure is the straight line giving the decision boundary at which $$p(y = 1 \mid x) = 0.5$$. On one side of the boundary, we'll predict $$y = 1$$ to be the most likely outcome, and on the other side, we'll predict $$y = 0$$.
 
@@ -844,11 +844,11 @@ SVMs are among the best (and many believe is indeed the best) "off-the-shelf" su
 
 We'll start our story on SVMs by talking about margins. This section will give the intuitions about margins and about the "confidence" of our predictions;
 
-Consider logistic regression, where the probability $$p(y = 1 \mid x; \theta)$$ is modeled by $$h_\theta (x) = g(\theta^T x)$$. We would then predict "1" on an input $$X$$ if and only if $$h_\theta (x) \geq 0.5$$, or equivalently, if and only if $$\theta^T x \geq 0$$. Consider a positive training example ($$y = 1$$). The larger $$\$theta^T x$$ is, the larger also is $$h_\theta (x) = p(y = 1 \mid x; \theta)$$, and thus also the higher our degree of "confidence" that the label is $$1$$. Thus, informally we can think of our prediction as being a very confident one that $$y = 1$$ if $$\theta^T x \gg 0$$. Similarly, we think of logistic regression as making a very confident prediction of $$y = 0$$, if $$\theta^T x \ll 0$$. Given a training set, again informally it seems that we'd have found a good fit to the training data if we can find $$\theta$$ so that $$\theta^T x^{(i)} \gg 0$$ whenever $$y^{(i)} = 1$$, and $$\theta^T x^{(i)} \ll 0$$ whenever $$y^{(i)} = 0$$, since this would reflect a very confident (and correct) set of classifications for all the training examples. This seems to be a nice goal to aim for, and we'll soon formalize this idea using the notion of functional margins.
+Consider logistic regression, where the probability $$p(y = 1 \mid x; \theta)$$ is modeled by $$h_\theta (x) = g(\theta^T x)$$. We would then predict "1" on an input $$X$$ if and only if $$h_\theta (x) \geq 0.5$$, or equivalently, if and only if $$\theta^T x \geq 0$$. Consider a positive training example ($$y = 1$$). The larger $$\theta^T x$$ is, the larger also is $$h_\theta (x) = p(y = 1 \mid x; \theta)$$, and thus also the higher our degree of "confidence" that the label is $$1$$. Thus, informally we can think of our prediction as being a very confident one that $$y = 1$$ if $$\theta^T x \gg 0$$. Similarly, we think of logistic regression as making a very confident prediction of $$y = 0$$, if $$\theta^T x \ll 0$$. Given a training set, again informally it seems that we'd have found a good fit to the training data if we can find $$\theta$$ so that $$\theta^T x^{(i)} \gg 0$$ whenever $$y^{(i)} = 1$$, and $$\theta^T x^{(i)} \ll 0$$ whenever $$y^{(i)} = 0$$, since this would reflect a very confident (and correct) set of classifications for all the training examples. This seems to be a nice goal to aim for, and we'll soon formalize this idea using the notion of functional margins.
 
-For a different type of intuition, consider the following figure, in which x's represent positive training examples, o's denote negative training examples, a decision boundary (this is the line given by the equation $\theta^T x = 0$, and is also called the **separating hyperplane**) is also shown, and three points have also been labeled A, B and C.
+For a different type of intuition, consider the following figure, in which x's represent positive training examples, o's denote negative training examples, a decision boundary (this is the line given by the equation $$\theta^T x = 0$$, and is also called the **separating hyperplane**) is also shown, and three points have also been labeled A, B and C.
 
-![hyperplane](/images/machine-learning/hyperplane.png)
+{% include image.html description="hyperplane" image="machine-learning/hyperplane.png" caption="true"%}
 
 Notice that the point A is very far from the decision boundary. If we are asked to make a prediction for the value of $$Y$$ at at A, it seems we should be quite confident that $$y = 1$$ there. Conversely, the point C is very close to the decision boundary, and while it's on the side of the decision boundary on which we would predict $$y = 1$$, it seems likely that just a small change to the decision boundary could easily have caused out prediction to be $$y = 0$$. Hence, we're much more confident about our prediction at A than at C. The point B lies in-between these two cases, and more broadly, we see that if a point is far from the separating hyperplane, then we may be significantly more confident in our predictions. Again, informally we think it'd be nice if, given a training set, we manage to find a decision boundary that allows us to make all correct and confident (meaning far from the decision boundary) predictions on the training examples. We'll formalize this later using the notion of geometric margins.
 
@@ -878,7 +878,7 @@ $$ \hat{\gamma} = \mathop{min}\limits_{i=1, \dots, m} \hat{\gamma}^{(i)} $$
 
 Next, lets talk about **geometric margins**. Consider the picture below:
 
-![geometric-margins](/images/machine-learning/geometric-margins.png)
+{% include image.html description="geometric-margins" image="machine-learning/geometric-margins.png" caption="true"%}
 
 The decision boundary corresponding to $$(w, b)$$ is shown, along with the vector $$w$$. Note that $$w$$ is orthogonal to the separating hyperplane. (You should convince yourself that this must be the case.) Consider the point at A, which represents the input $$x^{(i)}$$ of some training example with label $$y^{(i)} = 1$$. Its distance to the decision boundary, $$\gamma^{(i)}$$, is given by the line segment AB.
 
@@ -1058,7 +1058,7 @@ $$ g_i(w) = - y^{(i)} (w^T x^{(i)} + b) + 1 \le 0 $$
 
 We have one such constraint for each training example. Note that from the KKT dual complementarity condition, we will have $$\alpha_i > 0$$ only for the training examples that have functional margin exactly equal to one (i.e., the ones corresponding to constraints that hold with equality, $$g_i (w) = 0$$). Consider the figure below, in which a maximum margin separating hyperplane is shown by the solid line.
 
-![multi-hyperplane](/images/machine-learning/multi-hyperplane.png)
+{% include image.html description="multi-hyperplane" image="machine-learning/multi-hyperplane.png" caption="true"%}
 
 The points with the smallest margins are exactly the ones closest to the decision boundary; here, these are the three points (one negative and two positive examples) that lie on the dashed lines parallel to the decision boundary. Thus, only three of the $$\alpha_i$$ 's - namely, the ones corresponding to these three training examples - will be non-zero at the optimal solution to our optimization problem. These three points are called the **support vectors** in this problem. The fact that the number of support vectors can be much smaller than the size the training set will be useful later.
 
@@ -1239,7 +1239,7 @@ The application of kernels to support vector machines should already be clear an
 
 The derivation of the SVM as presented so far assumed that the data is linearly separable. While mapping data to a high dimensional feature space via $$\phi$$ does generally increase the likelihood that the data is separable, we can't guarantee that it always will be so. Also, in some cases it is not clear that finding a separating hyperplane is exactly what we'd want to do, since that might be susceptible to outliers. For instance, the left figure below shows an optimal margin classifier, and when a single outlier is added in the upper-left region (right figure), it causes the decision boundary to make a dramatic swing, and the resulting classifier has a much smaller margin.
 
-![regularization-and-non-separable](/images/machine-learning/regularization-and-non-separable.png)
+{% include image.html description="regularization-and-non-separable" image="machine-learning/regularization-and-non-separable.png" caption="true"%}
 
 To make the algorithm work for non-linearly separable datasets as well as be less sensitive to outliers, we reformulate our optimization (using $$\ell_1$$ **regularization**) as follows:
 
@@ -1299,7 +1299,7 @@ Thus, in the innermost loop of this algorithm, we will hold all the variables ex
 
 When the function $$W$$ happens to be of such a form that the "arg max" in the inner loop can be performed efficiently, then coordinate ascent can be a fairly efficient algorithm. Here’s a picture of coordinate ascent in action:
 
-![coordinate-ascent](/images/machine-learning/coordinate-ascent.png)
+{% include image.html description="coordinate-ascent" image="machine-learning/coordinate-ascent.png" caption="true"%}
 
 The ellipses in the figure are the contours of a quadratic function that we want to optimize. Coordinate ascent was initialized at $$(2, −2)$$, and also plotted in the figure is the path that it took on its way to the global maximum. Notice that on each step, coordinate ascent takes a step that’s parallel to one of the axes, since only one variable is being optimized at a time.
 
@@ -1349,7 +1349,7 @@ $$ \alpha_1 y^{(1)} + \alpha_2 y^{(2)} = \zeta $$
 
 We can thus picture the constraints on $$\alpha_1$$ and $$\alpha_2$$ as follows:
 
-![smo](/images/machine-learning/smo.png)
+{% include image.html description="smo" image="machine-learning/smo.png" caption="true"%}
 
 We know that $$\alpha_1$$ and $$\alpha_2$$ must lie within the box $$[0, C] \times [0, C]$$ shown. Also plotted is the line $$\alpha_1 y^{(1)} + \alpha_2 y^{(2)} = \zeta$$, on which we know $$\alpha_1$$ and $$\alpha_2$$ must lie. Note also that, from these constraints, we know $$L \le \alpha_2 \le H$$; otherwise, $$(\alpha_1, \alpha_2)$$ can’t simultaneously satisfy both the box and the straight line constraint. In this example, $$L = 0$$. But depending on what the line $$\alpha_1 y^{(1)} + \alpha_2 y^{(2)} = \zeta$$ looks like, this won’t always necessarily be the case; but more generally, there will be some lower-bound $$L$$ and some upper-bound $$h$$ on the permissable values for $$\alpha_2$$ that will ensure that $$\alpha_1, \alpha_2$$ lie within the box $$[0, C] \times [0, C]$$.
 
@@ -1384,7 +1384,7 @@ There’re a couple more details that are quite easy but that we’ll leave you 
 
 When talking about linear regression, we discussed the problem of whether to fit a simple model such as the linear $$y = \theta_0 + \theta_1 x$$, or a more complex model such as the polynomial $$y = \theta_0 + \theta_1 x + \dots + \theta_5 x^5$$. We saw the following example:
 
-![LWR](/images/machine-learning/LWR.png)
+{% include image.html description="LWR" image="machine-learning/LWR.png" caption="true"%}
 
 Fitting a $$5$$th order polynomial to the examples (rightmost figure) did not result in a good model. Specifically, even though the $$5$$th order polynomial did a very good job predicting $$Y$$ from $$X$$ for the examples in the training set, we do not expect the model shown to be a good one for predicting the examples not in the training set. In other words, what’s has been learned from the training set does not generalize well to other examples. The **generalization error** of a hypothesis is its expected error on examples not necessarily in the training set.
 
@@ -1541,11 +1541,11 @@ Given a hypothesis class $$H$$, we then define its **Vapnik-Chervonenkis dimensi
 
 For instance, consider the following set of three points:
 
-![VC3](/images/machine-learning/vc-3.png)
+{% include image.html description="VC3" image="machine-learning/vc-3.png" caption="true"%}
 
 Can the set $$h$$ of linear classifiers in two dimensions ($$h(x) = 1[\theta_0 + \theta_0 x_1 + \theta_2 x_2 \geq 0]$$) can shatter the set above? The answer is yes. Specifically, we see that, for any of the eight possible labelings of these points, we can find a linear classifier that obtains "zero training error" on them:
 
-![VC-Shatter-3](/images/machine-learning/vc-shatter-3.png)
+{% include image.html description="vc-shatter-3" image="machine-learning/vc-shatter-3.png" caption="true"%}
 
 Moreover, it is possible to show that there is no set of $$4$$ points that this hypothesis class can shatter. Thus, the largest set that $$h$$ can shatter is of size $$3$$, and hence $$VC(H) = 3$$.
 
@@ -1553,7 +1553,7 @@ More generally $$VC(H) = n + 1$$, where is $$h$$ is $$n$$ dimensions linear clas
 
 Note that the $$VC$$ dimension of $$h$$ here is $$3$$ even though there may be sets of size $$3$$ that it cannot shatter. For instance, if we had a set of three points lying in a straight line (left figure), then there is no way to find a linear separator for the labeling of the three points shown below (right figure):
 
-![VC-Not-Shatter-3](/images/machine-learning/vc-not-shatter-3.png)
+{% include image.html description="VC-Not-Shatter-3" image="machine-learning/vc-not-shatter-3.png" caption="true"%}
 
 In order words, under the definition of the $$VC$$ dimension, in order to prove that $$VC(H)$$ is at least $$d$$, we need to show only that there’s at least one set of size $$d$$ that $$h$$ can shatter.
 
