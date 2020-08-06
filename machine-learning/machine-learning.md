@@ -45,7 +45,7 @@ Machine learning tasks are typically classified into two broad categories, depen
 
 # Supervised Learning
 
-To establish notation for future use, we'll use $$x^{(i)}$$ to denote the "input" variables, also called input **features**, and $$y^{(i)}$$ to denote the "output" or **target** variable that we are trying to predict. A pair $(x^{(i)}, y^{(i)})$ is called a **training example**, and the dataset that we'll be using to learn - a list of $$m$$ training examples $[(x^{(i)}, y^{(i)}); i = 1, \dots, m]$ - is called a **training set**. We will also use $$X$$ denote the space of input values, and $$Y$$ the space of output values.
+To establish notation for future use, we'll use $$x^{(i)}$$ to denote the "input" variables, also called input **features**, and $$y^{(i)}$$ to denote the "output" or **target** variable that we are trying to predict. A pair $$(x^{(i)}, y^{(i)})$$ is called a **training example**, and the dataset that we'll be using to learn - a list of $$m$$ training examples $$[(x^{(i)}, y^{(i)}); i = 1, \dots, m]$$ - is called a **training set**. We will also use $$X$$ denote the space of input values, and $$Y$$ the space of output values.
 
 To describe the supervised learning problem slightly more formally, our goal is, given a training set, to learn a function $$h : X \to Y$$ so that $$h(x)$$ is a "good" predictor for the corresponding value of $$y$$. This function $$h$$ is called a **hypothesis**.
 
@@ -149,7 +149,7 @@ $$ \begin{align*}
 &= m log \frac{1}{\sqrt{2\pi} \sigma} - \frac{1}{\sigma^2} \frac{1}{2} \sum_{i=1}^{m} \Big( y^{(i)} - \theta^T x^{(i)} \Big)^2 \\
 \end{align*} $$
 
-Hence, maximizing $\ell(\theta)$ gives the same answer as minimizing
+Hence, maximizing $$\ell(\theta)$$ gives the same answer as minimizing
 
 $$ \frac{1}{2} \sum_{i=1}^{m} \Big( y^{(i)} - \theta^T x^{(i)} \Big)^2 $$
 
